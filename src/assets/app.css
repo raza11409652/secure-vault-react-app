@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    background: #FAFAFA;
+}
+.body-wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-wrapper>.auth-form{
+    background: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    width: 500px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.03);
+}
+
+/* Form CSS */
+
+.ant-form-item-control-input .ant-picker,
+.ant-form-item-control-input .ant-input {
+  padding: 10px 8px;
+  color: #272727;
+  border-color: #e1dede;
+  /* border-radius: 0.4rem; */
+}
+.ant-form-item-control-input .ant-select-selector {
+  height: auto !important;
+  padding: 8px 14px !important;
+}
+:where(.css-dev-only-do-not-override-1s3dcof).ant-input-affix-wrapper
+  > input.ant-input {
+  padding: 10px 8px;
+}
+
+/* Button */
+.ant-btn-primary {
+  background: #f05d23;
+}
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  background: #f05d23 !important;
+}
+.center-align {
+  display: flex;
+  justify-content: center;
+}
