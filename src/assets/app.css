@@ -1,21 +1,30 @@
-body{
-    margin: 0;
-    background: #FAFAFA;
+@import url("https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css");
+
+body {
+  margin: 0;
+  background: #fafafa;
+  font-family: "Lato", sans-serif !important;
+  overflow: hidden;
 }
-.body-wrapper{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+table,
+button {
+  font-family: "Lato", sans-serif !important;
+}
+.body-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.body-wrapper>.auth-form{
-    background: #fff;
-    padding: 1rem;
-    border-radius: 4px;
-    width: 500px;
-    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.03);
+.body-wrapper > .auth-form {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  width: 500px;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.03);
 }
 
 /* Form CSS */
@@ -47,4 +56,76 @@ body{
 .center-align {
   display: flex;
   justify-content: center;
+}
+
+.home-wrapper {
+  height: 100vh;
+}
+.logo-wrapper {
+  padding: 1rem;
+}
+.logo-wrapper h5 {
+  margin: 0;
+  letter-spacing: 0.05rem;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.text-primary {
+  color: #f05d23;
+}
+.home-wrapper > .app-container {
+  padding: 1rem;
+  display: flex;
+  flex: 10;
+  height: calc(100vh - 80px);
+}
+.home-wrapper > .app-container > .left {
+  flex: 1.5;
+}
+.home-wrapper > .app-container > .right {
+  flex: 8.5;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.home-wrapper > header {
+  width: 100%;
+  /* position: fixed; */
+  /* padding: 0 18px; */
+  background: #fff;
+  /* height: 48px; */
+  padding-top: 8px;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.home-wrapper > header .logo-wrapper img {
+  margin-inline-start: 10px;
+  position: relative;
+  /* margin-bottom: 0.25rem; */
+}
+.body-container {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.03);
+}
+.body-container > .header {
+  padding: 1.5rem;
+  border-top: 4px solid #f05d23;
+  display: flex;
+  justify-content: space-between;
+}
+.body-container > .body {
+  max-height: 80vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+.body-container > .header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.pad-1 {
+  padding: 1rem;
 }

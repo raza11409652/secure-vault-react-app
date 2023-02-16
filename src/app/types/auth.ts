@@ -7,9 +7,18 @@ export interface UserProfile {
   firstName: string;
   lastName: string;
   profile?: string;
-  role?:string
+  role?: string;
+  isEmailVerified: boolean;
+  team?: string;
 }
 export interface AuthLoginResponse {
   profile: UserProfile;
-  token: string
+  token: string;
+}
+
+export interface AuthRegister {
+  firstName: string;
+  email: string;
+  password: string;
+  lastName: string;
 }

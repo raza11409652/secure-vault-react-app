@@ -1,5 +1,7 @@
+import { GithubFilled } from "@ant-design/icons";
 import { Form, Input, Button } from "antd";
 import { NavLink } from "react-router-dom";
+import { AppLogo } from "../../components/logo";
 import { useAppDispatch, useAppSelector } from "../../slice";
 import { AuthAction } from "../../slice/auth";
 import { AuthLogin } from "../../types/auth";
@@ -17,6 +19,9 @@ export const LoginContainer = () => {
     <>
       <div className="body-wrapper">
         <div className="auth-form">
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <AppLogo />
+          </div>
           <Form
             layout="vertical"
             form={form}
@@ -54,6 +59,11 @@ export const LoginContainer = () => {
               <NavLink to={"/register"}>Register now</NavLink>
             </Form.Item>
           </Form>
+        </div>
+        <div className="pad-1">
+          <NavLink to={"https://github.com/raza11409652/secure-vault-react-app"} target="_blank">
+            <GithubFilled />
+          </NavLink>
         </div>
       </div>
     </>

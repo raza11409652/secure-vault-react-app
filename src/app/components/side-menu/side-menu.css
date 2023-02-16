@@ -1,0 +1,30 @@
+.side-menu {
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 8px;
+    /* height: 100%; */
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.03);
+  }
+  
+  .side-menu ul{
+      margin: 0;
+      margin-inline-start: 0;
+      padding: 0;
+  }
+  .side-menu ul li {
+    list-style: none;
+    display: block;
+  }
+  .side-menu ul li a{
+      border-radius: 4px;
+      text-decoration: none;
+      color: #222;
+      padding: 12px 18px;
+      display: flex;
+      flex-direction: row;
+  }
+  .side-menu ul li a svg{margin-inline-end: 10px;}
+  .side-menu ul li a.active{
+      color: #F05D23;
+      background: #ffe1d5e0;
+  }
